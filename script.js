@@ -1,17 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
-    VANTA.BIRDS({
-      el: "#hero", 
-      quantity: 5,
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.5,
-      scaleMobile: 1.00,
-      birdSize: 1.10,
-      wingSpan: 29.00,
-      backgroundAlpha: 0 
-    });
+  VANTA.GLOBE({
+    el: "#vanta-bg",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    size:1,
+    backgroundColor:0x23153c, 
+    color: 0xff3f81, 
+    color2: 0xffffff
   });
-  
+});
