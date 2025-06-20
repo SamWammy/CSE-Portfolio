@@ -43,7 +43,7 @@ body {
     margin: 0px;
     padding: 0;
     color: #B89DA7;
-    background-color: var(--color-3) ;
+    background-color: var(--bg-color) ;
     overflow-x: hidden;
   }
   
@@ -61,14 +61,14 @@ body {
   /* The sidebar menu */
 .side-bar {
     
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 40px; /* Set the width of the sidebar */
+    height: 100%; 
+    width: 40px; 
     margin-left: 0px;
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 0; 
+    z-index: 1;  /* lay on  top search for better assets*/
     top: 0; 
     background-color: var(--bg-color) ; /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-x: hidden; 
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -287,15 +287,19 @@ body {
   
   /* About Section */
   .about {
-    padding: 80px 0;
-    margin-left: 50px;
-    background-color: var(--color-3) ;
+    
+    padding: 100px 50px;
+    background-color: var(--bg-color) ;
+  }
+  .about h2{
+    color: #FFFFFF;
   }
   
   .about p {
+    width: 50%;
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #000000;
+    color: #ffffff;
   }
   
   /* Projects Section this is th */
@@ -372,3 +376,8 @@ body {
   footer .social-links a:hover {
     color: #3498db;
   }
+
+
+  /* BOOK ANIMATION*/
+
+  
