@@ -380,4 +380,6 @@ body {
 
   /* BOOK ANIMATION*/
 
-  
+  .bookAnimation{
+    margin-left: 100px; 
+  }
