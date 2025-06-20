@@ -29,6 +29,8 @@
   /* revision*/ 
 
   --bg-color: #23153c;
+  --fg-color: #F3E8EE;
+  --fg-color2:#d5bbc9;
 }
 
 /* Radial Gradient */
@@ -63,7 +65,7 @@ body {
     width: 40px; /* Set the width of the sidebar */
     margin-left: 0px;
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; 
+    z-index: 0; 
     top: 0; 
     background-color: var(--bg-color) ; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
@@ -78,7 +80,7 @@ body {
     padding: 0;
     margin: 0;
   }
-  
+
   /* The navigation menu links */
   .side-bar a {
     position: relative;
@@ -89,17 +91,15 @@ body {
     display: block;
     margin-right: 0px;
   }
-  
+
+
 
   
   h1, h2, h3 {
     color: #2c3e50;
   }
   
-  a {
-    text-decoration: none;
-    color: #3498db;
-  }
+
   
   .btn {
     display: inline-block;
@@ -236,23 +236,47 @@ body {
   .hero-text h1 {
     opacity: 100%;
     font-family: "Playfair Display", serif;
-    color: #000000;
+    color: #ffffff;
     font-size: 4rem;
     font-style: italic;
     margin-bottom: 20px;
-  }
+    /*  */
+
+     width: 10ch ; /* this makes it so header doesnt take up entire width*/
+    overflow: hidden;
+    border-right: .10em solid #ffffff;
+    white-space: nowrap;
+    letter-spacing: .10em;
+    z-index: 1;
+
+    animation:
+    typing 1s steps(20,end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing{
+    from {width: 0}
+    to {width: 10ch}
+}
+
+@keyframes blink-caret{
+    from,to {border-color: transparent}
+    50% {border-color: #ffffff ;}
+}
+
+  
   
   .hero-text p {
     /* allign box to the middle */
     text-align: center;
     /*  square background */
     border-radius: 5px; /* edge curve */
-    background-color: var(--color-4);
-    border-width: light;
-   /* outline: var(--color-5) solid 2px;*/
-    border-color: #FFFFFF;
+    background-color: var(--fg-color);
+    border: 3px solid var(--fg-color2);
+
+       /* outline: var(--color-5) solid 2px;*/
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    color: var(--color-1); /* this is the font color*/
+    color: #000; /* this is the font color*/
     font-size: 1.2rem;
     margin-top: 1px;
     margin-bottom: 1px;
