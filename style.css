@@ -31,6 +31,7 @@
   --bg-color: #23153c;
   --fg-color: #F3E8EE;
   --fg-color2:#d5bbc9;
+  --font-color:#000000;
 }
 
 /* Radial Gradient */
@@ -289,23 +290,33 @@ body {
   .about {
     
     padding: 100px 50px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-top: 150px;
     background-color: var(--bg-color) ;
+    display: flex;
+    justify-content: space-between;
   }
-  .about h2{
-    color: #FFFFFF;
+
+   .aboutHeaders{
+    padding-top: 0px;
+    width:60%;
+     border-radius: 5px; 
+    background-color: var(--fg-color);
+    border: 3px solid var(--fg-color2);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    color: var(--font-color);
+    height:min-content;
+    margin-top: 4.1%;
   }
+
   
-  .about p {
-    width: 50%;
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #ffffff;
-  }
   
   /* Projects Section this is th */
   .projects {
     margin-left: 50px;
-    padding: 80px 0;
+    padding: 0px 0;
   }
   
   
@@ -380,6 +391,9 @@ body {
 
   /* BOOK ANIMATION*/
 
+
   .bookAnimation{
-    margin-left: 100px; 
+    background-color: #000;
   }
+
+ 
