@@ -311,6 +311,32 @@ body {
     height:min-content;
     margin-top: 4.1%;
   }
+  
+.arrow {
+	position: absolute;
+	width: 380.42px;
+	height: 10px;
+	background-color: #ffffff;
+	margin-top: 38%;
+  margin-left:-35px ;
+	left: 25%;
+	transform: translateX(-50%);
+}
+
+.arrow::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -.75rem;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent; /* Matches tail thickness */
+  border-bottom: 10px solid transparent; /* Matches tail thickness */
+  border-left: 15px solid #ffffff; /* Arrowhead color and size */
+}
+
+
 
   
   
@@ -396,28 +422,3 @@ body {
   .bookAnimation{
     background-color: #000;
   }
-
-.arrow {
-	position: absolute;
-	width: 380.42px;
-	height: 10px;
-	background-color: #ffffff;
-	margin-top: 38%;
-  margin-left:-35px ;
-	left: 25%;
-	transform: translateX(-50%);
-}
-
-.arrow::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: -.75rem;
-  transform: translateY(-50%);
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent; /* Matches tail thickness */
-  border-bottom: 10px solid transparent; /* Matches tail thickness */
-  border-left: 15px solid #ffffff; /* Arrowhead color and size */
-}
-
