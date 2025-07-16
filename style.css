@@ -1,7 +1,18 @@
 /*  Variables are down below, including colors and etc  */
 
+
+ /* TODO 
+ create header for about section so transition is less abrupt
+ fix arrow for about section 
+ fill in about section book 
+ input assets and add headers for professional experiences skills 
+ fix project cards link to github, attatch headers of tech stack used as well
+ fix contact and footer 
+ */
 /*colors*/ 
 
+
+/* All the code below is made by Sammy Algharazi*/
 .color-1 {
   color: #f8f6f1;
 }
@@ -115,6 +126,20 @@ body {
   .btn:hover {
     background-color: #2980b9;
   }
+  .projBtn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-left: 1rem ;
+}
+
+.projBtn:hover {
+  background-color: #2980b9;
+}
+
   
   /* Navigation Bar */
   nav {
@@ -476,6 +501,23 @@ margin-top: 200px;
 .project-card p {
   font-size: 0.9rem;
   color: #666;
+}
+
+.Skill-Tags{ 
+  float: right;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-right: 1rem;
+}
+
+.Tag{
+  color: black;
+  background-color: var(--fg-color2);
+  width: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+
 }
 
 /* Contact Section */
