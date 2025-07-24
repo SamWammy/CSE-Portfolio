@@ -65,12 +65,44 @@ input[type=radio] {
 
 .card h1{
     font-family: "Playfair Display", serif;
-
     font-size: 1rem;
     align-self: start;
     margin-left: 2rem;
+    height: fit-content;
 }
 
+
+.skillsContainer {
+    font-family: "Playfair Display", serif;
+    align-self: flex-start;
+    margin-left: 2rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+    flex-wrap: wrap; 
+}
+
+.skillsContainer h4 {
+    font-family: "Playfair Display", serif;
+    margin: 0;
+    margin-right: 1rem; 
+}
+
+.skills { 
+    color: white; 
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.Tag{ 
+  color: black;
+  background-color: #d5bbc9;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+}
 
 .container {
   width: 100%;
