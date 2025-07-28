@@ -312,16 +312,25 @@ body {
   }
   
   /* About Section */
-  .about {
-margin-top: 200px;
+  .aboutheader{ 
+     text-align: center;
+  font-family: "Playfair Display", serif;
+  color: #ffffff;
+  font-size: 3rem;
+  font-style: italic;
+    margin-top: 200px;
     padding: 100px 50px;
     padding-bottom: 0px;
     padding-right: 0px;
     padding-top: 150px;
+
+  }
+  .about {
     background-color: var(--bg-color) ;
     display: flex;
     justify-content: space-between;
   }
+
 
    .aboutHeaders{
     padding-top: 0px;
