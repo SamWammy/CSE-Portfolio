@@ -44,6 +44,7 @@
     box-sizing: border-box;
   }
   body {
+    transition: border-color 0.5s ease, box-shadow 0.5s ease;
     margin: 0;
     height: 100vh;
     width: 100vw;
@@ -53,7 +54,10 @@
     justify-content: center;
     box-sizing: border-box;
     padding: 1rem;
+
   }
+
+
 
   .sprite-wrapper {
     position: relative;
@@ -168,6 +172,13 @@
         scrollbar-width: none;
         scroll-marker-group: after;
 
+        border: 2px solid transparent;
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          border-radius: 5%;
+        transition: border-color 0.5s ease, box-shadow 0.5s ease;
+
+        
+
         &::scroll-button(*) {
           inline-size: 64px;
           aspect-ratio: 1;
@@ -222,6 +233,7 @@
           animation-timeline: --carousel-timeline;
         }
 
+
         & > .carousel-item {
           scroll-snap-stop: always;
           scroll-snap-align: start;
@@ -259,8 +271,9 @@
             animation: stay-centered linear both;
             animation-timeline: view(x);
             timeline-scope: --parallax-item;
-          }
 
+
+          }
           .left-page, .right-page {
             flex: 1;
             font-size: small;
@@ -302,6 +315,11 @@
     }
   }
 }
+        .carousel:hover{
+            border-color: #ff3f81;
+	box-shadow: 0 0 6px 2px #ff3f81;
+            
+          }
 
 @media (width < 748px) {
   .container {

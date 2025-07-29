@@ -333,17 +333,40 @@ body {
 
 
    .aboutHeaders{
-    padding-top: 0px;
+    z-index: 1; /* this just puts the border above the book to perserve hover affect without clipping*/
     width:50%;
      border-radius: 5px; 
     background-color: var(--fg-color);
     border: 3px solid var(--fg-color2);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: border-color 0.5s ease, box-shadow 0.5s ease;
     text-align: center;
     color: var(--font-color);
     height:min-content;
     margin-left: 3rem;
+    padding: 0px 5px;
   }
+
+  .aboutHeaders:hover{ 
+  border-color: #ff3f81;
+	box-shadow: 0 0 6px 2px #ff3f81;
+  }
+
+ .symbols {
+	font-size: 1.35rem;
+	vertical-align: middle;
+	display: inline-block; 
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0%, 100% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+}
   .aboutHeaders h2{ 
     color: black;
     text-align: center;
@@ -406,7 +429,6 @@ body {
     height: fit-content;
     color: var(--font-color);
     transition: border-color 0.5s ease, box-shadow 0.5s ease;
-
 }
 .Contain1:hover{
   border-color: var(--style-color);
